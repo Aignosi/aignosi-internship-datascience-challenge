@@ -49,15 +49,6 @@ Iremos avaliar com bastante critério (**em ordem de relevância maior para meno
    - Avaliaremos a qualidade e a clareza dos gráficos e visualizações gerados.
    - Será considerado o quão intuitivas e informativas são as interpretações dos dados, demonstrando capacidade de análise crítica e exploração visual eficaz.
 
-## 1.4 Critérios que **Não nos preocupamos tanto** nessa etapa
-
-**Capacidade em explorar dados de maneira coerente** 
-
-É isso mesmo que você está lendo! Parece contraintuitivo, mas não estamos preocupado em você conseguir fazer uma integração de dados (ETL), então, não há necessidade de se preocupar com isso e gastar todo o tempo do desafio com isso. 
-
-**Esperamos que você faça um EDA (exploratory data analysis)** bacana, mas não "frite" os neurônios. Lembre dos principais critérios que estamos nos preocupando mais em te avaliar, conforme descrito no item anterior.
-
-
 ## 1.5 Requisitos mínimos
 
 Para realizar o desafio, você precisa **cumprir os seguintes requisitos**:
@@ -127,19 +118,28 @@ Para realizar o desafio, você precisa **cumprir os seguintes requisitos**:
 # 2. Maiores Detalhes sobre o problema que você irá resolver no desafio
 Nessa seção iremos trazer mais informações sobre o problema de negócio que você resolverá, os objetivos de negócio, bem como o que os tomadores de decisão estão esperando dessa solução.
 
-## 2.1 Descrevendo o cenário e o problema
+## 2.1 ## Descrição do Cenário e do Problema
 
-Imagine que você trabalha em uma empresa que fornece serviços de engenharia de dados para a indústria, e você é o principal engenheiro de dados desse time. Considere também que é a primeira vez que você e sua empresa estão encarando um desafio de integração de dados para esse cliente específico.
+Você está trabalhando em um projeto que envolve a integração de dados para uma empresa do setor industrial. O cliente possui uma vasta quantidade de **dados não estruturados** provenientes de diversas fontes, como documentos, registros de sensores e logs de sistemas. O desafio consiste em transformar esses dados em um formato estruturado que possa ser facilmente analisado e consultado.
 
-Ou seja, você conhece pouco sobre o processo atual de integração e tratamento de dados do cliente, não sabe muito bem como ele toma as decisões sobre o pipeline de dados ou as ferramentas que utiliza atualmente. Porém, por "sorte", o cliente é bem camarada e está disposto a correr um certo risco com o projeto. Ou seja, mesmo que o pipeline de ETL ou a integração de dados não fique perfeita, ele precisa acreditar que vale a pena continuar explorando o problema. Se o projeto não sair como esperado, o cliente pode estar aberto a explorar outras abordagens de ETL e integração de dados no futuro.
+### Responsabilidades do Candidato:
 
-Você tem, portanto, a oportunidade de mostrar para esse cliente que a integração de dados é potencialmente viável e valiosa para o negócio dele. É uma chance de impressionar e convencê-lo de que a exploração de dados pode abrir portas para novos insights e decisões estratégicas.
+1. **Busca de Dados Não Estruturados**:  
+   O candidato deve identificar e coletar dados não estruturados de um mondoDB. Isso pode incluir a extração de informações relevantes de arquivos de texto, JSON, XML, ou mesmo a leitura de dados a partir de APIs externas.
 
-Dito isso, uma dica importante: preocupe-se em avaliar bem os dados que você tem em mãos, explique claramente as escolhas das técnicas de exploração e transformação dos dados, e capriche numa apresentação impactante, de forma que o seu cliente, que não é especialista em dados, possa entender o pipeline que você está propondo e ver o valor que isso pode trazer. Seu objetivo é fazer o cliente pensar: "Existe um grande potencial nesses dados, vale a pena investir!"
+2. **Agregação e Transformação de Dados**:  
+   Após a coleta dos dados, é necessário realizar a agregação e a transformação desses dados para prepará-los para análise. O candidato deve ser capaz de aplicar técnicas de ETL (Extract, Transform, Load) para limpar, normalizar e estruturar os dados de maneira adequada.
 
-Portanto, reforçando: não se preocupe em criar um modelo preditivo para este desafio. O foco é mostrar um processo sólido de ETL e integração de dados.
+3. **Criação de um Formato Tabular**:  
+   O objetivo é converter os dados agregados em um formato tabular que facilite consultas e análises futuras. Isso pode incluir a definição de esquemas de tabelas e a escolha das features mais relevantes para armazenamento.
 
-Mais detalhes sobre o cliente: é uma empresa da indústria mineradora, e o seu contato direto, que está comprando o projeto piloto, tem uma leve noção de análise de dados.
+4. **Desenvolvimento de uma API de Consulta**:  
+   Uma vez que os dados estejam estruturados, o candidato deve desenvolver uma API que permita consultas eficientes aos dados tabulados. Essa API deve ser capaz de retornar informações de forma rápida e intuitiva, permitindo que os usuários finais acessem e analisem os dados conforme necessário.
+
+### Objetivo Final
+
+O candidato deve demonstrar a capacidade de transformar dados não estruturados em informações valiosas e acessíveis, permitindo decisões baseadas em dados concretos. O projeto visa mostrar como a integração e a transformação eficaz de dados podem gerar insights significativos para o cliente.
+
 
 ## 2.2 O Dado
 
@@ -159,11 +159,8 @@ Busque trazer **diferenciais** para o seu desafio:
 3. **Descrever as técnicas de transformação de dados que utilizou**  
    - Explique por que você escolheu uma técnica de ETL em detrimento de outra. Exemplo: "Optei por normalizar os dados desta maneira porque isso facilita a análise subsequente" ou "Utilizei agregação porque os dados estavam fragmentados em várias coleções."
 
-4. **Justificar a escolha das features (campos) selecionados para armazenamento ou análise**  
-   - Explique como você escolheu os atributos ou features mais relevantes e por que decidiu armazená-los em um banco de dados relacional ou outra estrutura de dados.
-
-5. **Descrever possíveis melhorias ou extensões**  
-   - Mesmo que o foco não seja a criação de modelos preditivos, comente sobre como você poderia expandir o pipeline de dados no futuro. Se fosse necessário aplicar algum tipo de análise mais avançada, como faria isso? Que tipo de modelo ou análise adicional você usaria para gerar insights mais profundos a partir dos dados transformados?
+4. **Descrever possíveis melhorias ou extensões**  
+   - Comente sobre como você poderia expandir o pipeline de dados no futuro. Se fosse necessário aplicar algum tipo de análise mais avançada, como faria isso? Que tipo de modelo ou análise adicional você usaria para gerar insights mais profundos a partir dos dados transformados?
 
 
 ## 2.4 Agradecimentos e dúvidas
