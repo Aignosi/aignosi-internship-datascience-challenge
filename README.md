@@ -143,7 +143,7 @@ O candidato deve demonstrar a capacidade de transformar dados não estruturados 
 
 ## 2.2 O Dado
 
-O dado do problema a ser analisado se encontra na plataforma MongoDB, as credenciais de acesso seram eviadas por email ao candidato.
+O dado do problema a ser analisado se encontra em um MongoDB, as credenciais de acesso seram eviadas por email ao candidato.
 
 
 ## 2.3 Considerações Finais
